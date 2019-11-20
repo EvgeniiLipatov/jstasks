@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Homework #65</p>
+
+  <script>
+    let myArray = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко']
+	for (let i = 0; i < myArray.length; i ++)
+	{
+		if (myArray[i] == 'молоко')
+			console.log(`${myArray[i]}: Хорошо, но грустно`);
+		else 
+			console.log(`${myArray[i]}: Плохо, но потом`);
+	}
+	
+  </script>
+  
+  <script>
+	let array1 = [1, 5, 12, 4, 3]
+	let array2 = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+	let array3 = [3, 10, 17]
+	let sum = 0
+	let length = 0 
+	array4 = [array1, array2, array3]
+	for (let i = 0; i < array4.length; i ++){
+		array4[i].forEach(function(value,index,array) {
+			length = array.length
+			for (let i = 0; i < array.length; i ++)
+				sum += array[i]
+			let avg = sum/array.length
+			sum = length = 0
+			console.log(avg)
+		})
+		
+	}
+  </script>
+  <script>
+	function cornerTable(){
+		let some_number = prompt("У квадратного стола от(пилили один угол. Сколько теперь углов у него стало?");
+  		if (some_number == 5 || some_number === 'пять')
+			alert("Верный ответ!")
+		else
+			alert("Неверный ответ!")
+	}
+	cornerTable();
+  </script> 
+  
+  <script>
+	let duck = {
+		name: "donald",
+		color: "white",
+		old: "1 year",
+		toStr: function() { console.log(this.name + ',' + this.color + ',' + this.old) },
+		say: function() {console.log('krya-krya')}
+	};
+	duck.toStr();
+	duck.say();
+  </script>
+  
+  <p>The end</p>
+
+</body>
+
+</html>
