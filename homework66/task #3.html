@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<div id="container"></div>	
+		<script>
+			let cont = document.getElementById('container');
+			for(let i = 0; i < 5; i ++){
+				let intdiv = document.createElement('div');
+				intdiv.innerHTML = 'element' + ' ' + (i+1);
+				intdiv.classList.add('element')
+				cont.appendChild(intdiv);
+            }	
+			console.log(cont)	
+		</script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<div id="container"></div>
+		<input id="add-item-btn" type="button" value="+">
+		<script>
+			let button = document.getElementById('add-item-btn');
+			let cont = document.getElementById('container');
+			button.addEventListener('click', function() { let intdiv = document.createElement('div');
+				intdiv.innerHTML = 'element';
+				intdiv.classList.add('element')
+				cont.appendChild(intdiv);});		
+		</script>
+	</body>
+</html>
