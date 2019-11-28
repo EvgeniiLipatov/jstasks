@@ -28,7 +28,12 @@ function renderData(data) {
     pArray[1].append(spn2);
     //pArray[1].text(data.alpha3Code);
     flag = data.alpha3Code.toLowerCase();
-    pArray[2].text(data.currencies[0].name);
+    let spn0 = $(document.createElement('span'));
+    spn0.addClass('country')
+    spn0.text(data.currencies[0].name)
+    pArray[2].text("currency");
+    pArray[2].append(spn0);
+    //pArray[2].text(data.currencies[0].name);
     let spn3 = $(document.createElement('span'));
     spn3.addClass('country')
     spn3.text(data.population)
